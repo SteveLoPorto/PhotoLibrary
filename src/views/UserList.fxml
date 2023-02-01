@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="photosPck.UserListController">
+   <children>
+      <Button fx:id="backButton" layoutX="34.0" layoutY="26.0" mnemonicParsing="false" onAction="#goBackToAdmin" text="Back" />
+      <Button fx:id="exitButton" layoutX="554.0" layoutY="26.0" mnemonicParsing="false" onAction="#exit" prefHeight="6.0" prefWidth="0.0" text="Exit" />
+      <Button fx:id="logoutButton" layoutX="489.0" layoutY="27.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <ListView fx:id="usersListView" layoutX="79.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="162.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users" wrappingWidth="34.21630859375" />
+      <Text layoutX="279.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users List" underline="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="photosPck.UserHomeScreenController">
+   <children>
+      <Button fx:id="exitButton" layoutX="560.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" prefHeight="6.0" prefWidth="0.0" text="Exit" />
+      <Button fx:id="logoutButton" layoutX="495.0" layoutY="15.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Button fx:id="openSelectedAlbumButton" layoutX="16.0" layoutY="52.0" mnemonicParsing="false" onAction="#openSelectedAlbum" text="Open Selected Album" />
+      <Button fx:id="deleteSelectedAlbumButton" layoutX="166.0" layoutY="52.0" mnemonicParsing="false" onAction="#deleteSelectedAlbum" text="Delete Selected Album" />
+      <ListView fx:id="albumsListView" layoutX="16.0" layoutY="94.0" prefHeight="200.0" prefWidth="335.0" />
+      <TextField fx:id="albumNameTextField" layoutX="16.0" layoutY="306.0" promptText="Selected Album" />
+      <Button fx:id="createAlbumButton" layoutX="184.0" layoutY="307.0" mnemonicParsing="false" onAction="#createAlbum" text="Create" />
+      <Button fx:id="renameAlbumButton" layoutX="253.0" layoutY="307.0" mnemonicParsing="false" onAction="#renameAlbum" text="Rename" />
+      <Text layoutX="451.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="309.0" layoutX="370.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="223.0" />
+      <TextField fx:id="startDateTextField" layoutX="400.0" layoutY="115.0" prefHeight="26.0" prefWidth="70.0" promptText="Start Date" />
+      <TextField fx:id="endDateTextField" layoutX="482.0" layoutY="115.0" prefHeight="26.0" prefWidth="70.0" promptText="End Date" />
+      <Text layoutX="396.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search By Date(yyyy-mm-dd)" wrappingWidth="197.05389404296875" />
+      <Line endX="123.0" layoutX="470.0" layoutY="151.0" startX="-100.0" />
+      <Text layoutX="430.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search By Tag" />
+      <TextField fx:id="tag1TextField" layoutX="400.0" layoutY="212.0" prefHeight="26.0" prefWidth="54.0" promptText="Tag 1" />
+      <TextField fx:id="val1TextField" layoutX="461.0" layoutY="212.0" prefHeight="26.0" prefWidth="56.0" promptText="Val 1" />
+      <TextField fx:id="tag2TextField" layoutX="397.0" layoutY="257.0" prefHeight="26.0" prefWidth="54.0" promptText="Tag 2" />
+      <TextField fx:id="val2TextField" layoutX="461.0" layoutY="257.0" prefHeight="26.0" prefWidth="56.0" promptText="Val 2" />
+      <CheckBox fx:id="andCheckBox" layoutX="387.0" layoutY="308.0" mnemonicParsing="false" onAction="#setAndValue" text="And" />
+      <CheckBox fx:id="orCheckBox" layoutX="387.0" layoutY="334.0" mnemonicParsing="false" onAction="#setOrValue" text="Or" />
+      <Button fx:id="searchButton" layoutX="442.0" layoutY="352.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Text fx:id="welcomeBanner" layoutX="245.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Home Page" underline="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
